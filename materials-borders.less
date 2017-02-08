@@ -1,0 +1,71 @@
+[class*="border"]{border: 0 solid transparent;border: none;}
+.border {border: @border-width solid @border-color;}
+.border--t {border-top: @border-width solid @border-color;}
+.border--r {border-right: @border-width solid @border-color;}
+.border--b {border-bottom: @border-width solid @border-color;}
+.border--l {border-left: @border-width solid @border-color;}
+.border--h {border-top: @border-width solid @border-color;border-bottom: @border-width solid @border-color;}
+.border--v {border-right: @border-width solid @border-color;border-left: @border-width solid @border-color;}
+.radius{border-radius: @radius--xs}
+.radius--xs {border-radius: @radius--xs}
+.radius--sm {border-radius: @radius--sm}
+.radius--md {border-radius: @radius--md}
+.radius--lg {border-radius: @radius--lg}
+.radius--xl {border-radius: @radius--xl}
+.radius--full {border-radius: 100em}
+.radius-t-r--xs{border-top-right-radius: @radius--xs}
+.radius-t-l--xs{border-top-left-radius: @radius--xs}
+.radius-b-r--xs{border-bottom-right-radius: @radius--xs}
+.radius-b-l--xs{border-bottom-left-radius: @radius--xs}
+.radius-t-r--sm{border-top-right-radius: @radius--sm}
+.radius-t-l--sm{border-top-left-radius: @radius--sm}
+.radius-b-r--sm{border-bottom-right-radius: @radius--sm}
+.radius-b-l--sm{border-bottom-left-radius: @radius--sm}
+.radius-t-r--md{border-top-right-radius: @radius--md}
+.radius-t-l--md{border-top-left-radius: @radius--md}
+.radius-b-r--md{border-bottom-right-radius: @radius--md}
+.radius-b-l--md{border-bottom-left-radius: @radius--md}
+.radius-t-r--lg{border-top-right-radius: @radius--lg}
+.radius-t-l--lg{border-top-left-radius: @radius--lg}
+.radius-b-r--lg{border-bottom-right-radius: @radius--lg}
+.radius-b-l--lg{border-bottom-left-radius: @radius--lg}
+.radius-t-r--xl{border-top-right-radius: @radius--xl}
+.radius-t-l--xl{border-top-left-radius: @radius--xl}
+.radius-b-r--xl{border-bottom-right-radius: @radius--xl}
+.radius-b-l--xl{border-bottom-left-radius: @radius--xl}
+.radius--t--sm {.radius-t-l--sm;.radius-t-r--sm;}
+.radius--b--sm {.radius-b-r--sm;.radius-b-l--sm;}
+.border--dashed {border-style: dashed;}
+.border--b--dashed {border-bottom-style: dashed;}
+.border--dotted {border-style: dotted;}
+.border-color--primary {border-color: @color--primary;}
+.border-color--info {border-color: @color--info;}
+.border-color--secondary {border-color: @color--secondary;}
+.border-color--warning {border-color: @color--warning;}
+.border-color {border-color: @border-color;}
+.border--b--strong{border-bottom: @border-width solid @border-color--strong;}
+.border--weakest{border-color: @border-color--weakest;}
+.border--weaker{border-color: @border-color--weaker;}
+.border--weak{border-color: @border-color--weak;}
+.border--strong{border-color: @border-color--strong;}
+.border--stronger{border-color: @border-color--stronger;}
+.border--strongest{border-color: @border-color--strongest;}
+.border--color-invert{
+	&[class*="border--"]{
+		border-color: @border-color-inverted;
+	}
+	&.border-color {border-color: @border-color-inverted;}
+	&.border--b--strong{border-bottom: @border-width solid @border-color-inverted--strong;}
+	&.border--weakest{border-color: @border-color-inverted--weakest;}
+	&.border--weaker{border-color: @border-color-inverted--weaker;}
+	&.border--weak{border-color: @border-color-inverted--weak;}
+	&.border--strong{border-color: @border-color-inverted--strong;}
+	&.border--stronger{border-color: @border-color-inverted--stronger;}
+	&.border--strongest{border-color: @border-color-inverted--strongest;}
+}
+.border--bold{border-width: 2px;}
+.border--bolder{border-width: 3px;}
+.border--boldest{border-width: 5px;}
+
+.border--none{border: none;}
+.border-b--none{border-bottom: none;}
